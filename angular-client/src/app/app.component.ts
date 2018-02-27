@@ -13,8 +13,8 @@ export class AppComponent implements OnInit {
   title = 'app works!';
 
   // Link to our api, pointing to localhost
-  // API = 'http://localhost:3000';
-  API = 'http://localhost:29020/api';
+  API = 'http://localhost:3000';
+  // API = 'http://localhost:29020/api';
 
   // Declare empty list of people
   people: any[] = [];
@@ -24,8 +24,8 @@ export class AppComponent implements OnInit {
 
   // Angular 2 Life Cycle event when component has been initialized
   ngOnInit() {
-    this.getVersionInfo();
-    // this.getAllPeople();
+    // this.getVersionInfo();
+    this.getAllPeople();
   }
 
   // Add one person to the API
